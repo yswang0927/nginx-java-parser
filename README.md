@@ -1,5 +1,12 @@
 # Nginx configuration Java parser
 
+>
+> yswang 修改
+> 
+> 2025/6/14 - 调整 `Nginx.g4` 语法文件, 使用`antlr4-runtime-v4.13.1` 进行重新编译.
+> 
+> 
+
 This library helps in analyzing Nginx web server configuration files, looking up for specified parameters, blocks, regular expressions or comments. Then AST can be modified and converted back to plain file.
 
 #### Features

@@ -1,7 +1,5 @@
-// Generated from Nginx.g4 by ANTLR 4.5.3
-
-    package com.github.odiszapc.nginxparser.antlr;
-    import com.github.odiszapc.nginxparser.*;
+// Generated from /data/Work/nginx-java-parser/src/main/resources/grammar/Nginx.g4 by ANTLR 4.13.2
+package com.github.odiszapc.nginxparser.antlr;
 
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
