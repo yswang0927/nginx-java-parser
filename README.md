@@ -6,16 +6,23 @@
 > 2025/6/14 - 调整 `Nginx.g4` 语法文件, 使用`antlr4-runtime-v4.13.1` 进行重新编译.
 > 
 > 编译方法:
+>
 > 1. IDEA安装 `ANTLR v4` 插件.
+>
 > 2. 右键 `resources/grammar/Nginx.g4` 文件选择 `Configure ANTLR...` 菜单进行参数配置:
+> 
 >   'Output directory where all output is generated: ' - 选择到 `src/main/java` 目录.
 >   
 >   'Package/namespace for the generated code: ' - 输入: `com.github.odiszapc.nginxparser.antlr`.
 >   
 >   'Language: ' - 输入: `Java`.
+>
 > 3. 上述配置完成后, 右键 `resources/grammar/Nginx.g4` 文件选择 `Generate ANTLR Recognizer` 菜单执行代码生成.
+>
 > 4. 生成的新代码会覆盖 `com.github.odiszapc.nginxparser.antlr` 下的旧代码.
+>
 > 5. 检查 `com.github.odiszapc.nginxparser.antlr` 下的每个 java 文件, 修复某些类头部出现重复 `package com.github.odiszapc.nginxparser.antlr;` 问题.
+>
 > 6. OK, 可以maven打包了.
 > 
 
