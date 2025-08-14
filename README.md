@@ -15,7 +15,7 @@
 >   
 >   'Package/namespace for the generated code: ' - 输入: `com.github.odiszapc.nginxparser.antlr`.
 >   
->   'Language: ' - 输入: `Java`.
+>   'Language: ' - 输入: `Java`. # 注意:是 Java 不是 java
 >
 > 3. 上述配置完成后, 右键 `resources/grammar/Nginx.g4` 文件选择 `Generate ANTLR Recognizer` 菜单执行代码生成.
 >

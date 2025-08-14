@@ -1,4 +1,4 @@
-// Generated from /data/Work/nginx-java-parser/src/main/resources/grammar/Nginx.g4 by ANTLR 4.13.2
+// Generated from /data/Work/dev-workspaces/idea-workspace/nginx-java-parser/src/main/resources/grammar/Nginx.g4 by ANTLR 4.13.2
 package com.github.odiszapc.nginxparser.antlr;
 
 import com.github.odiszapc.nginxparser.*;
@@ -24,8 +24,9 @@ public class NginxParser extends Parser {
 		new PredictionContextCache();
 	public static final int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
-		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, Value=15, STR_EXT=16, 
-		Comment=17, REGEXP_PREFIXED=18, QUOTED_STRING=19, SINGLE_QUOTED=20, WS=21;
+		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, Value=15, KEY_VALUE_PAIR=16, 
+		STR_EXT=17, Comment=18, REGEXP_PREFIXED=19, QUOTED_STRING=20, SINGLE_QUOTED=21, 
+		WS=22;
 	public static final int
 		RULE_config = 0, RULE_statement = 1, RULE_genericStatement = 2, RULE_regexHeaderStatement = 3, 
 		RULE_block = 4, RULE_genericBlockHeader = 5, RULE_if_statement = 6, RULE_if_body = 7, 
@@ -49,8 +50,8 @@ public class NginxParser extends Parser {
 	private static String[] makeSymbolicNames() {
 		return new String[] {
 			null, null, null, null, null, null, null, null, null, null, null, null, 
-			null, null, null, "Value", "STR_EXT", "Comment", "REGEXP_PREFIXED", "QUOTED_STRING", 
-			"SINGLE_QUOTED", "WS"
+			null, null, null, "Value", "KEY_VALUE_PAIR", "STR_EXT", "Comment", "REGEXP_PREFIXED", 
+			"QUOTED_STRING", "SINGLE_QUOTED", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -187,7 +188,7 @@ public class NginxParser extends Parser {
 				setState(32); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 427520L) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & 820736L) != 0) );
 			}
 		}
 		catch (RecognitionException re) {
@@ -520,7 +521,7 @@ public class NginxParser extends Parser {
 			setState(89);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 427536L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 820752L) != 0)) {
 				{
 				setState(87);
 				_errHandler.sync(this);
@@ -724,7 +725,7 @@ public class NginxParser extends Parser {
 			setState(119);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 295936L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 558080L) != 0)) {
 				{
 				{
 				setState(114);
@@ -1131,7 +1132,7 @@ public class NginxParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0015\u00b8\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001"+
+		"\u0004\u0001\u0016\u00b8\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001"+
 		"\u0002\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004"+
 		"\u0002\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007"+
 		"\u0002\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0001\u0000\u0001\u0000"+
@@ -1168,7 +1169,7 @@ public class NginxParser extends Parser {
 		"\u0000\u0000\u0016\u0017\u0003\u0002\u0001\u0000\u0017\u0018\u0006\u0000"+
 		"\uffff\uffff\u0000\u0018\u001f\u0001\u0000\u0000\u0000\u0019\u001a\u0003"+
 		"\b\u0004\u0000\u001a\u001b\u0006\u0000\uffff\uffff\u0000\u001b\u001f\u0001"+
-		"\u0000\u0000\u0000\u001c\u001d\u0005\u0011\u0000\u0000\u001d\u001f\u0006"+
+		"\u0000\u0000\u0000\u001c\u001d\u0005\u0012\u0000\u0000\u001d\u001f\u0006"+
 		"\u0000\uffff\uffff\u0000\u001e\u0016\u0001\u0000\u0000\u0000\u001e\u0019"+
 		"\u0001\u0000\u0000\u0000\u001e\u001c\u0001\u0000\u0000\u0000\u001f \u0001"+
 		"\u0000\u0000\u0000 \u001e\u0001\u0000\u0000\u0000 !\u0001\u0000\u0000"+
@@ -1183,18 +1184,18 @@ public class NginxParser extends Parser {
 		"\u0010\b\u000045\u0006\u0002\uffff\uffff\u000057\u0001\u0000\u0000\u0000"+
 		"61\u0001\u0000\u0000\u000063\u0001\u0000\u0000\u00007:\u0001\u0000\u0000"+
 		"\u000086\u0001\u0000\u0000\u000089\u0001\u0000\u0000\u00009\u0005\u0001"+
-		"\u0000\u0000\u0000:8\u0001\u0000\u0000\u0000;<\u0005\u0012\u0000\u0000"+
+		"\u0000\u0000\u0000:8\u0001\u0000\u0000\u0000;<\u0005\u0013\u0000\u0000"+
 		"<=\u0006\u0003\uffff\uffff\u0000=>\u0005\u000f\u0000\u0000>?\u0006\u0003"+
 		"\uffff\uffff\u0000?\u0007\u0001\u0000\u0000\u0000@A\u0003\u0012\t\u0000"+
 		"AB\u0006\u0004\uffff\uffff\u0000BG\u0001\u0000\u0000\u0000CD\u0003\n\u0005"+
 		"\u0000DE\u0006\u0004\uffff\uffff\u0000EG\u0001\u0000\u0000\u0000F@\u0001"+
 		"\u0000\u0000\u0000FC\u0001\u0000\u0000\u0000GI\u0001\u0000\u0000\u0000"+
-		"HJ\u0005\u0011\u0000\u0000IH\u0001\u0000\u0000\u0000IJ\u0001\u0000\u0000"+
+		"HJ\u0005\u0012\u0000\u0000IH\u0001\u0000\u0000\u0000IJ\u0001\u0000\u0000"+
 		"\u0000JK\u0001\u0000\u0000\u0000KY\u0005\u0002\u0000\u0000LM\u0003\u0002"+
 		"\u0001\u0000MN\u0006\u0004\uffff\uffff\u0000NX\u0001\u0000\u0000\u0000"+
 		"OP\u0003\b\u0004\u0000PQ\u0006\u0004\uffff\uffff\u0000QX\u0001\u0000\u0000"+
 		"\u0000RS\u0003\f\u0006\u0000ST\u0006\u0004\uffff\uffff\u0000TX\u0001\u0000"+
-		"\u0000\u0000UV\u0005\u0011\u0000\u0000VX\u0006\u0004\uffff\uffff\u0000"+
+		"\u0000\u0000UV\u0005\u0012\u0000\u0000VX\u0006\u0004\uffff\uffff\u0000"+
 		"WL\u0001\u0000\u0000\u0000WO\u0001\u0000\u0000\u0000WR\u0001\u0000\u0000"+
 		"\u0000WU\u0001\u0000\u0000\u0000X[\u0001\u0000\u0000\u0000YW\u0001\u0000"+
 		"\u0000\u0000YZ\u0001\u0000\u0000\u0000Z\\\u0001\u0000\u0000\u0000[Y\u0001"+
@@ -1206,7 +1207,7 @@ public class NginxParser extends Parser {
 		"\u0000\u0000gh\u0001\u0000\u0000\u0000h\u000b\u0001\u0000\u0000\u0000"+
 		"ig\u0001\u0000\u0000\u0000jk\u0005\u0004\u0000\u0000kl\u0006\u0006\uffff"+
 		"\uffff\u0000lm\u0003\u000e\u0007\u0000mo\u0006\u0006\uffff\uffff\u0000"+
-		"np\u0005\u0011\u0000\u0000on\u0001\u0000\u0000\u0000op\u0001\u0000\u0000"+
+		"np\u0005\u0012\u0000\u0000on\u0001\u0000\u0000\u0000op\u0001\u0000\u0000"+
 		"\u0000pq\u0001\u0000\u0000\u0000qw\u0005\u0002\u0000\u0000rs\u0003\u0002"+
 		"\u0001\u0000st\u0006\u0006\uffff\uffff\u0000tv\u0001\u0000\u0000\u0000"+
 		"ur\u0001\u0000\u0000\u0000vy\u0001\u0000\u0000\u0000wu\u0001\u0000\u0000"+

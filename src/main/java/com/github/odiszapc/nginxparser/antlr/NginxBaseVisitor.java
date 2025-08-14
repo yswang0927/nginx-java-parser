@@ -1,6 +1,5 @@
-// Generated from /data/Work/nginx-java-parser/src/main/resources/grammar/Nginx.g4 by ANTLR 4.13.2
+// Generated from /data/Work/dev-workspaces/idea-workspace/nginx-java-parser/src/main/resources/grammar/Nginx.g4 by ANTLR 4.13.2
 package com.github.odiszapc.nginxparser.antlr;
-
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**

@@ -140,9 +140,20 @@ rewriteStatement returns [NgxParam ret]
 //QUOTED_STRING
 //: '"' (~('"' | '\\' | '\r' | '\n') | '\\' ('"' | '\\'))* '"';
 
-
-Value: STR_EXT | QUOTED_STRING | SINGLE_QUOTED
+// yswang 增加 KEY_VALUE_PAIR
+Value: KEY_VALUE_PAIR | STR_EXT | QUOTED_STRING | SINGLE_QUOTED
 ;
+
+// yswang 新增 KEY_VALUE_PAIR
+// 支持: key=value key="value" key='value'
+KEY_VALUE_PAIR
+    : [a-zA-Z_][a-zA-Z0-9_\-]*
+      '='
+      ( QUOTED_STRING
+      | SINGLE_QUOTED
+      | ([a-zA-Z0-9_\-./] | NON_ASCII)+
+      )
+    ;
 
 STR_EXT
   :
