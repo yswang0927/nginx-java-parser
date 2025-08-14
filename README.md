@@ -3,6 +3,8 @@
 >
 > yswang 修改
 > 
+> 2025/8/14 - 调整 `Nginx.g4` 语法文件增加 KEY_VALUE_PAIR 语法规则, 支持 key=value key="value" key='value'.
+> 
 > 2025/6/14 - 调整 `Nginx.g4` 语法文件, 使用`antlr4-runtime-v4.13.1` 进行重新编译.
 > 
 > 编译方法:
